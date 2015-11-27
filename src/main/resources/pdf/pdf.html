@@ -2,21 +2,309 @@
 <!DOCTYPE html
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
-        div.border {
-        border: solid;
-        border-width: 1px 1px 1px 1px;
-        padding: 5px 20px 5px 20px;
+        p {
+        margin:0;
+        padding-left:5px;
         }
+        .text-align-end{text-align:right;}
+        .font-size-22{font-size: 22px}
+        .spx-padding {padding-left:5px}
+
+        table {
+        border-collapse: collapse;
+        border-color: black;
+        }
+
+
     </style>
 </head>
-<body style="font-family: Liberation Serif;">
 
-<div class="border">
-    <h1 th:text="${message}">message</h1>
+<body style="width:16.7cm">
+<div class="header" style="width:16.7cm;height:1.7cm">
+    <div id="logo" class="media" data-src="DNB_LOGO.png" style="width: 2.49cm; height: 1.27cm; float:left">
+    </div>
+    <div style="float:right; width:14cm;height:1.27cm;" class="text-align-end">
+        <p style="font-weight:bold;font-size:18px">Brukerstedsavtale for Vipps Bedrift</p>
+
+        <p style="font-size:13px">betalingsmottaker av elektroniske korttransaksjoner</p>
+
+        <p style="font-size:12px">Del E av Kontoavtale næringsforhold</p>
+    </div>
+</div>
+<div class="body" style="width:16.7cm;font-size:11px">
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+        <tr>
+            <td colspan="4" valign="top" width="12cm" height="0.31cm" style="background-color:#ddd">
+                <p style="font-size:12px">
+                    <b>Kundeopplysninger</b>
+                </p>
+            </td>
+            <td valign="top" style="border-right: 1px solid black; background-color:#ddd;width: 26.5%;">
+                <p style="font-size:12px; padding-left:5px">
+                    <b>Returadresse</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; height:0.5cm; width:4cm">
+                <p>Avtalen gjelder</p>
+            </td>
+            <td colspan="3" class="spx-padding">
+                <input type="checkbox"/> <span>Ny</span>
+                <span>&nbsp;&nbsp;</span>
+                <input type="checkbox"/> <span>Endring</span>
+            </td>
+            <td rowspan="4" valign="top" style="background-color:#ddd" class="spx-padding">
+                <p><span>DNB Bank ASA</span></p>
+
+                <p><span>ITOP xxxxxx</span></p>
+
+                <p><span>Postboks 1600 Sentrum, 0021 Oslo</span></p>
+
+                <p><span>e-post</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">
+                <p>Organisasjonsnummer</p>
+            </td>
+            <td colspan="3">
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">
+                <p>Foretakets navn</p>
+            </td>
+            <td colspan="3">
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">
+                <p>Foretakets e-post adresse</p>
+            </td>
+            <td colspan="3">
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">
+                <p>Adresse</p>
+            </td>
+            <td colspan="4">
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Postnummer</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Poststed</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Telefonnummer</td>
+            <td colspan="4"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="height:0.5cm"></div>
+
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+        <tr>
+            <td colspan="5" valign="top" style="background-color:#ddd">
+                <p style="font-size:12px">
+                    <b>Kundeprofil</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Abonnementstype</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Oppgj&oslash;rsdag (ant. dager)</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">&Aring;rlig omsetning</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">MCC kode/type virksomhet</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Beskrivelse virksomhet</td>
+            <td colspan="4"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="height:0.5cm"></div>
+
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+        <tr>
+            <td colspan="5" valign="top" style="background-color:#ddd">
+                <p style="font-size:12px">
+                    <b>Kontaktperson - Profil og informasjon</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Vipps rolle</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Fornavn</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Mellomnavn</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Etternavn</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">E-post adresse</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Mobilnummer</td>
+            <td colspan="4"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="height:0.5cm"></div>
+
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+        <tr>
+            <td colspan="5" valign="top" style="background-color:#ddd">
+                <p style="font-size:12px">
+                    <b>Salgssteder</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Navn p&aring; salgssted</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Salgssted kortnummer</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Adresse</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Postnummer</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Poststed</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Geografisk lokasjon (GPS)</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Faktureringskonto</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Oppgj&oslash;rskonto</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:4cm">Rapporterings frekvens</td>
+            <td colspan="4"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="height:0.5cm"></div>
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+        <tr>
+            <td style="background-color:#ddd; width:3.25cm;border:none;font-weight:bold;font-size:12px"><p>
+                Underskrifter</p></td>
+            <td style="background-color:#ddd;" colspan="2"><p>Jeg/vi har lest og akseptert gjeldende Avtalevilkår for
+                Vipps Bedrift (www.vipps.no) </p></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:3.25cm;border:none;font-weight:bold;font-size:12px"><p>Kunde</p>
+            </td>
+            <td colspan="2"><p>Kundens firmastempel og underskrift av daglig leder eller tilsvarende i henhold til
+                gyldig firmaattest.</p></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:3.25cm;border:none"><p>Sted og dato</p></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr style="height:0.45cm">
+            <td style="background-color:#ddd; width:3.25cm;border:none" rowspan="3"><p> Underskrift/er</p></td>
+            <td rowspan="2"></td>
+            <td style="background-color:#ddd; width:6.5cm"> Navn skrevet med maskin eller store bokstaver</td>
+        </tr>
+        <tr style="height:0.52cm">
+            <td style="width:6.5cm"></td>
+        </tr>
+        <tr style="height:0.32cm">
+            <td></td>
+            <td style="width:6.5cm"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="height:0.5cm"></div>
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+        <tr>
+            <td style="background-color:#ddd; width:3.25cm;border:none;font-weight:bold;font-size:12px"><p>For bankens
+                notater</p></td>
+            <td style="background-color:#ddd;" colspan="3"><p>Bankens avdelingsstempel og underskrift som bekreftelse på
+                at underskriveren forplikter selskapet
+                og at signaturprøver og legitimasjon er innhentet og kontrollert.</p></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:3.25cm;border:none;font-weight:bold;font-size:12px"><p>Sted og
+                dato</p></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#ddd; width:3.25cm;border:none"><p>Underskrift</p></td>
+            <td></td>
+            <td colspan="2"><p>Navn i store bokstaver</p><br/></td>
+        </tr>
+        <tr style="height:0.61cm">
+            <td style="background-color:#ddd; width:3.25cm;border:none" rowspan="2"><p> Andre opplysninger</p></td>
+            <td rowspan="2"></td>
+            <td style="width:2.5cm"></td>
+            <td style="width:2.5cm"></td>
+        </tr>
+        <tr style="height:0.61cm">
+            <td style="width:2.5cm">ARS saksnummer</td>
+            <td style="width:2.5cm"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="height:0.5cm"></div>
+
+    <div style="background-color:#ddd; height:0.4cm">
+        <p style="float:left">DNB Bank ASA, Postboks1600 Sentrum, 0021 Oslo, Foretaksregisteret NO 984 851 006</p>
+
+        <p style="float:right" class="text-align-end">Versjon 2015.10</p>
+    </div>
 </div>
 </body>
 </html>
