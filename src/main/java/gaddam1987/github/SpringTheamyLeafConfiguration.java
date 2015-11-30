@@ -62,8 +62,8 @@ public class SpringTheamyLeafConfiguration {
         ITextRenderer renderer = new ITextRenderer();
         ITextFontResolver fontResolver = renderer.getFontResolver();
 
-        ClassPathResource regular = new ClassPathResource("/font/LiberationSerif-Regular.ttf");
-        fontResolver.addFont(regular.getURL().toString(), BaseFont.IDENTITY_H, true);
+       // ClassPathResource regular = new ClassPathResource("/font/LiberationSerif-Regular.ttf");
+       // fontResolver.addFont(regular.getURL().toString(), BaseFont.IDENTITY_H, true);
 
         renderer.getSharedContext().setReplacedElementFactory(new MediaReplacedElementFactory(renderer.getSharedContext().getReplacedElementFactory()));
         renderer.setDocumentFromString(htmlContent);
